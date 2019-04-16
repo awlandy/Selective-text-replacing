@@ -12,7 +12,7 @@ int main()
 	string readout;
 	smatch match;
 	regex re("^N:(.*)");
-	string replace("N:daddy_");
+	string replace("N:someprefix_"); // adding "someprefix_" infront of a name in a .vcf file
 
 	while (!readFile.eof())
 	{
